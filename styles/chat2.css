@@ -14,9 +14,16 @@ body{
     display: flex;
 }
 
+.contenido-chat {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .area-logos {
     height: 10%;
-    width: 80%;
     padding: 20px;
     display: flex;
     background-color: aqua;
@@ -35,10 +42,12 @@ body{
 
 .area-preguntas {
     width: 20%;
-    height: 100%;
+    height: 83%;
+    margin: 1% ;
     padding: 4% 2% 2% 2%;
     display: flex;
-    background-color: blueviolet;
+    background-color: rgb(196, 196, 196);
+    border-radius: 20px;
 }
 
 #lista-preguntas {
@@ -47,4 +56,27 @@ body{
     text-align: left;
     line-height: 3em;
 }
+
+.area-chat {
+    flex-grow: 1;
+    padding: 20px;
+    border: 2px solid #e62b3c;
+    overflow-y: auto;
+}
+
+.area-mensajes {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 4%;
+    border-top: 2px solid #472be6;
+}
+
+.contenido-mensajes {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+}
+
 
