@@ -1,0 +1,166 @@
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+#menuIcon {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Estilos del menú desplegable */
+.overlay-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: rgba(66, 66, 66, 0.7);
+    display: none; 
+}
+
+.desplegable {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #1f1f1f;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.contenido-menu {
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenido-menu a {
+    padding: 10px 10px 50px 10px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #acacac;
+    display: block;
+    transition: 0.3s;
+}
+
+.contenido-menu a:hover,.closebtn:hover, .contenido-menu a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #acacac;
+    transition: 0.3s;
+}
+
+.boton-menu {
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #252525;
+    float: right;
+    padding: 12px 30px;
+}
+
+body.desplegable-abierto {
+    background-color: rgba(49, 49, 49, 0.7);
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 17%;
+    padding-left: 6%;
+    padding-top: 2%;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.contenido-inicio {
+    width: 60%;
+    padding-bottom: 10%;
+    padding-left: 4%;
+    padding-right: 0%;
+}
+
+.contenido-inicio h1{
+    font-size: 3.2em;
+    color: #E62B3C;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.contenido-inicio p{
+    font-size: 1.9em;
+    font-weight: 400;
+    line-height: 1.3em;
+    padding-top: 7%;
+}
+
+#grafico-inicio {
+    width: 60%;
+}
+
+#botonCodigo {
+    background-color: #E62B3C;
+    color: white;
+    border: none;
+    padding: 4% 10%;
+    font-size: 2.3em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 6%;
+}
+
+footer{
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #1D1D1B;
+}
+
+#imagen-footer{
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.copyrigt{
+    font-size: 1.2em;
+    color: aliceblue;
+    padding-bottom: 2%;
+}

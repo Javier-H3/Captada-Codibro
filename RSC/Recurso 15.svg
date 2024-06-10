@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.17 51.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Roboto-Black, Roboto;
+        font-size: 41.74px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #e62b3c;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <rect class="cls-2" x="0" y="0" width="187.17" height="51.9" rx="25.95" ry="25.95"/>
+      <text class="cls-1" transform="translate(34.09 38.15)"><tspan x="0" y="0">Enviar</tspan></text>
+    </g>
+  </g>
+</svg>

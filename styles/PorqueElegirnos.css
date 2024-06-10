@@ -1,0 +1,213 @@
+#titulo{
+    font-size: 6em;
+    font-weight: 700;
+    text-align: center;
+    padding: 2%;
+    color: #E62B3C;
+}
+
+.referencias{
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+
+#contenido-referencias {
+    width: 70%;
+    padding: 3% 0% 0% 10%;
+}
+
+.lista-referencias {
+    padding: 5% 7% 5% 10%;
+    background-color: black;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    border-radius: 40px 0 0 40px;
+    
+}
+
+.lista-referencias li {
+    list-style: disc;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+#Codibro-referencias {
+    width: 28%;
+    padding-left: 10%
+}
+
+.codigo-CIIU,
+.Actividad-economica,
+.ParaQueSirve {
+    display: flex;
+}
+
+#Codibro-codigo {
+    width: 20%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 6%
+}
+
+#contenerdor-codigoCIIU,
+#contenerdor-ParaQueSirve {
+    width: 70%;
+    padding: 5% 5% 5% 3%;
+}
+
+.contenido-codigoCIUU {
+    padding: 5% 7% 6% 3%;
+    background-color: #E62B3C;
+    border-radius: 60px 60px 60px 60px;
+    color: aliceblue;
+}
+
+.contenido-codigoCIUU h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+.contenido-codigoCIUU p {
+    font-size: 1.7em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-right: 1.5em;
+}
+
+#contenerdor-ActEco {
+    width: 70%;
+    padding: 5% 5% 3% 3%;
+}
+
+.contenido-ActEco {
+    padding: 4% 3% 5% 8%;
+    background-color: #E62B3C;
+    border-radius: 60px 60px 60px 60px;
+    color: aliceblue;
+}
+
+.contenido-ActEco h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.contenido-ActEco p {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-right: 3em;
+    margin-bottom: 2.5%;
+}
+
+#Codibro-ActEco {
+    width: 15%;
+    padding-top: 2%;
+    padding-right: 12%
+}
+
+.contenido-ParaQueSirve {
+    padding: 3%;
+    background-color: #E62B3C;
+    border-radius: 60px 60px 60px 60px;
+    color: aliceblue;
+}
+
+.contenido-ParaQueSirve h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+.contenido-ParaQueSirve p {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-left: 2%;
+}
+
+#Codibro-ParaQueSirve {
+    width: 20%;
+    padding-left: 6%;
+    padding-bottom: 3%;
+
+}
+
+.SobreMi {
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#contenedor-SobreMi {
+    width: 70%;
+    padding: 1% 0% 0% 2%;
+}
+
+.contenido-SobreMi {
+    padding: 5% 2% 5% 5%;
+    background-color: #1D1D1B;
+    color: white;
+    
+    border-radius: 40px 0 0 40px;
+}
+
+.contenido-SobreMi h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+    
+}
+
+.contenido-SobreMi p {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-right: 8em;
+}
+#Codibro-SobreMi {
+    width: 35%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+
+.contenidoRedes {
+    padding: 50px 20px 100px 20px;
+    text-align: center;
+    margin-left: 57%;
+    margin-right: 10%;
+    border-top: 2px solid #1D1D1B;
+    
+}
+
+.social-icon {
+    margin: 40px;
+    color: #333;
+    font-size: 3.7em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+@keyframes vibration {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1px, 1px); }
+    50% { transform: translate(1px, -1px); }
+    75% { transform: translate(-1px, 1px); }
+    100% { transform: translate(0, 0); }
+  }
+
+#Icons:hover{
+    animation: vibration 0.8s ease-in-out infinite;
+    color: #E62B3C;
+    transition: color 1.3s;
+}
+
+
