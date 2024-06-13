@@ -75,8 +75,31 @@ body{
 .contenido-mensajes {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
+    border: 2px solid #e62b3c;
+    border-radius: 50px;
     width: 80%;
 }
 
+#mensajeUsuario {
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+#mensajeUsuario:focus {
+    outline: none;
+}
+
+#botonEnviar {
+    margin: 5px 10px 0px 0px;
+    text-align: center;
+    border: none;
+    border-radius: 360px;
+    font-size: 1.5em;
+}
 
