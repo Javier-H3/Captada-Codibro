@@ -1,35 +1,35 @@
 function sendMessage(option = null) {
-    const chatBox = document.getElementById('chat-box');
-    const userInput = document.getElementById('user-input');
-    const messageText = option || userInput.value;
+    const chatBox = document.getElementById('area-chat');
+    const mensajeUsuario = document.getElementById('mensajeUsuario');
+    const mensaje = option || mensajeUsuario.value;
 
-    if (!messageText) return;
+    if (!mensaje) return;
 
     // Crear el mensaje del usuario
-    const userMessage = document.createElement('div');
-    userMessage.className = 'message user-message';
-    userMessage.innerText = messageText;
-    chatBox.appendChild(userMessage);
+    const configUser = document.createElement('div');
+    configUser.className = 'message user-message';
+    configUser.innerText = mensaje;
+    chatBox.appendChild(configUser);
 
     // Crear el mensaje del bot
-    const botMessage = document.createElement('div');
-    botMessage.className = 'message bot-message';
-    botMessage.innerHTML = `<img src="RSC/Recurso 9.svg" alt="Bot"> ${getBotResponse(messageText)}`;
-    chatBox.appendChild(botMessage);
+    const configBot = document.createElement('div');
+    configBot.className = 'message bot-message';
+    configBot.innerHTML = `<img src="RSC/Recurso 21.svg" alt="Bot"> ${getBotResponse(mensaje)}`;
+    chatBox.appendChild(configBot);
 
     // Limpiar el input del usuario
-    if (!option) userInput.value = '';
+    if (!option) mensajeUsuario.value = '';
 
     // Desplazar el chat hacia abajo
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-function getBotResponse(message) {
+function getBotResponse(mensaje) {
     const responses = {
         '¿Qué hago?': 'Puedes realizar diversas tareas como gestionar tus códigos y consultas.',
         '¿Cómo puedo ayudarte?': 'Estoy aquí para asistirte con cualquier pregunta o problema que tengas.',
         '¡Hablemos!': '¡Claro! ¿Sobre qué te gustaría hablar?'
     };
 
-    return responses[message] || 'Lo siento, no entendí eso. ¿Puedes reformular tu pregunta?';
+    return responses[mensaje] || 'Lo siento, no entendí eso. ¿Puedes reformular tu pregunta?';
 }

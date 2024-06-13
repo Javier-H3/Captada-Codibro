@@ -26,7 +26,6 @@ body{
     height: 10%;
     padding: 20px;
     display: flex;
-    background-color: aqua;
 }
 
 #codibro-logo {
@@ -69,14 +68,15 @@ body{
     align-items: center;
     padding: 10px;
     margin-bottom: 4%;
-    border-top: 2px solid #472be6;
+    margin-left: 2%;
 }
 
 .contenido-mensajes {
     display: flex;
     align-items: center;
     padding: 5px;
-    border: 2px solid #e62b3c;
+    border: 2px solid #5e5e5e;
+    background-color: #e4e4e4;
     border-radius: 50px;
     width: 80%;
 }
@@ -88,6 +88,7 @@ body{
     font-size: 1em;
     border: none;
     outline: none;
+    background-color: #e4e4e4;
     border-radius: 10px 0 0 10px;
 }
 
@@ -101,5 +102,26 @@ body{
     border: none;
     border-radius: 360px;
     font-size: 1.5em;
+    background-color: #e4e4e4;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.user-message {
+    text-align: right;
+    color: #333;
+}
+
+.bot-message {
+    text-align: left;
+    color: #e62b3c;
+}
+
+.bot-message img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
