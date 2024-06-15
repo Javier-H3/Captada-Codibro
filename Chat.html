@@ -21,16 +21,16 @@
 
         <div class="area-preguntas">
             <ul id="lista-preguntas">
-                <li>¿Qué hago?</li>
-                <li>¿Cómo puedo ayudarte?</li>
-                <li>¡Hablemos!</li>
+                <li id="preguntas" onclick="sendMessage('¿Qué hago?')">¿Qué hago?</li>
+                <li id="preguntas" onclick="sendMessage('¿Cómo puedo ayudarte?')">¿Cómo puedo ayudarte?</li>
+                <li id="preguntas" onclick="sendMessage('¡Hablemos!')">¡Hablemos!</li>
             </ul>
         </div>
         <div class="contenido-chat">
             <div class="area-logos">
                 <img id="codibro-logo" src="RSC/codi2.svg" alt="Codibro logo">
                 <img class="icons" id="perfil" src="RSC/Recurso 13.svg" alt="perfil-usuario">
-                <img class="icons" id="masInformacion" src="RSC/Recurso 14.svg" alt="Mas informacion">
+                <i  id="masInformacion" class="bi bi-question-circle-fill"></i>
             </div>
             <div class="area-chat" id="area-chat"> 
 
