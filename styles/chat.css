@@ -119,6 +119,8 @@ body{
     resize: none;
     overflow-y: auto;
     max-height: 100px;
+    height: auto;
+    min-height: 30px;
 }
 
 #mensajeUsuario:focus {

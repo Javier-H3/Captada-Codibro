@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     mensajeUsuario.addEventListener('input', function() {
         this.style.height = 'auto';
         this.style.height = (this.scrollHeight) + 'px';
+        if (this.scrollHeight > 100) {
+            this.style.overflowY = 'scroll';
+        } else {
+            this.style.overflowY = 'hidden';
+        }
     });
 });
 
@@ -50,6 +55,7 @@ function sendMessage(option = null) {
     // Limpiar el input del usuario y ajustar la altura
     mensajeUsuario.value = '';
     mensajeUsuario.style.height = 'auto';
+    mensajeUsuario.style.overflowY = 'hidden';
 
     // Desplazar el chat hacia abajo
     chatBox.scrollTop = chatBox.scrollHeight;
