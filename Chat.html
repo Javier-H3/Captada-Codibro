@@ -30,14 +30,18 @@
             <div class="area-logos">
                 <img id="codibro-logo" src="RSC/codi2.svg" alt="Codibro logo">
                 <img class="icons" id="perfil" src="RSC/Recurso 13.svg" alt="perfil-usuario">
-                <i  id="masInformacion" class="bi bi-question-circle-fill"></i>
+                <a href="PorqueElegirnos.html#CodicoCIIU">
+                    <i id="masInformacion" class="bi bi-question-circle-fill"></i>
+                </a>
             </div>
             <div class="area-chat" id="area-chat"> 
 
             </div>
             <div class="area-mensajes">
                 <div class="contenido-mensajes">
-                    <textarea id="mensajeUsuario" placeholder="Escribe un mensaje..."></textarea>
+                    <div id="inputUser">
+                        <textarea rows="1" id="mensajeUsuario" placeholder="Escribe un mensaje..."></textarea>
+                    </div>
                     <button onclick="sendMessage()" id="botonEnviar"><i class="bi bi-send"></i></button>
                 </div>
             </div>

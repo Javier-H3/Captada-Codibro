@@ -191,7 +191,7 @@
 .social-icon {
     margin: 40px;
     color: #333;
-    font-size: 3.7em;
+    font-size: 3.4em;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -204,7 +204,7 @@
     100% { transform: translate(0, 0); }
   }
 
-#Icons:hover{
+.Icons:hover{
     animation: vibration 0.8s ease-in-out infinite;
     color: #E62B3C;
     transition: color 1.3s;

@@ -1,20 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mensajeUsuario = document.getElementById('mensajeUsuario');
 
+    mensajeUsuario.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight > 100 ? '100px' : this.scrollHeight + 'px');
+        this.style.overflowY = (this.scrollHeight > 100 ? 'scroll' : 'hidden');
+    });
+
     mensajeUsuario.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' && !event.shiftKey) {
             event.preventDefault();
             sendMessage();
-        }
-    });
-
-    mensajeUsuario.addEventListener('input', function() {
-        this.style.height = 'auto';
-        this.style.height = (this.scrollHeight) + 'px';
-        if (this.scrollHeight > 100) {
-            this.style.overflowY = 'scroll';
-        } else {
-            this.style.overflowY = 'hidden';
         }
     });
 });
