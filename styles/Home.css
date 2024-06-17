@@ -1,9 +1,12 @@
-body{
+/* Estilos base */
+body {
     font-family: "Poppins", sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
+header {
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -25,11 +28,11 @@ header{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: rgba(66, 66, 66, 0.7);
-    display: none; 
+    display: none;
 }
 
 .desplegable {
@@ -61,7 +64,9 @@ header{
     transition: 0.3s;
 }
 
-.contenido-menu a:hover,.closebtn:hover, .contenido-menu a:focus {
+.contenido-menu a:hover,
+.closebtn:hover,
+.contenido-menu a:focus {
     color: #f1f1f1;
 }
 
@@ -88,79 +93,227 @@ body.desplegable-abierto {
     background-color: rgba(49, 49, 49, 0.7);
 }
 
-.menu{
+.menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo{
+#logo {
     width: 17%;
-    padding-left: 6%;
-    padding-top: 2%;
+    padding: 2% 0% 0% 3%;
 }
 
 .inicio {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0px;
+    text-align: center;
 }
 
 .contenido-inicio {
-    width: 60%;
-    padding-bottom: 10%;
+    width: 90%;
+    padding-bottom: 2%;
     padding-left: 4%;
-    padding-right: 0%;
+    padding-right: 2%;
 }
 
-.contenido-inicio h1{
-    font-size: 3.2em;
+#Titulo_Texto {
+    position: relative;
+    top: 50px;
+}
+
+.contenido-inicio h1 {
+    font-size: 2.3em;
     color: #E62B3C;
     font-weight: 700;
     line-height: 1.5em;
+    padding-bottom: 5%;
 }
 
-.contenido-inicio p{
-    font-size: 1.9em;
+.contenido-inicio p {
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.3em;
-    padding-top: 7%;
+    padding-bottom: 6%;
 }
 
 #grafico-inicio {
-    width: 60%;
+    width: 80%;
+    max-width: 400px;
 }
 
 #botonCodigo {
     background-color: #E62B3C;
     color: white;
     border: none;
-    padding: 4% 10%;
-    font-size: 2.3em;
+    padding: 10px 20px;
+    font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
     border-radius: 40px;
     margin-top: 6%;
 }
 
-footer{
+footer {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     background-color: #1D1D1B;
+    padding: 20px 0;
 }
 
-#imagen-footer{
+#imagen-footer {
     width: 10%;
-    justify-content: space-between;
-    align-items: center;
-    
+    margin-bottom: 10px;
 }
 
-.copyrigt{
-    font-size: 1.2em;
+.copyrigt {
+    font-size: 1em;
     color: aliceblue;
-    padding-bottom: 2%;
+}
+
+/* Media Queries para Móviles */
+@media (max-width: 767px) {
+
+    .desplegable {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        top: 0px; 
+        background-color: #1f1f1f;
+        display: none;
+        transition: 0.5s;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .desplegable.abierto {
+        display: block;
+        max-height: 40%; /* Ajusta según la cantidad de elementos del menú */
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .contenido-menu {
+        position: static;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .closebtn {
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+    }
+
+    .contenido-menu a {
+        padding: 10px;
+        margin: 10px 80px 10px 80px;
+        font-size: 1.1em;
+    }
+
+    #logo {
+        width: 38%;
+    }
+
+    .boton-menu{
+        font-size: 2em;
+    }
+
+    .contenido-inicio {
+        width: 90%;
+        margin-top: 3%;
+        padding-bottom: 5%;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 1.3em;
+    }
+
+    .contenido-inicio p {
+        font-size: 1em;
+        padding-top: 6%;
+    }
+
+    #grafico-inicio {
+        width: 76%;
+    }
+
+    #botonCodigo {
+        font-size: 1em;
+        border-radius: 10px;
+        padding: 15px 16px;
+        margin-top: 20%;
+    }
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 768px){
+
+    #logo {
+        width: 28%;
+    }
+
+    .inicio {
+        flex-direction: row;
+        margin-top: 1%;
+        
+    }
+
+    .contenido-inicio {
+        width: 100%;
+        text-align: left;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 3em;
+    }
+
+    .contenido-inicio p {
+        font-size: 1.5em;
+    }
+
+    #grafico-inicio {
+        width: 40%;
+        max-width: none;
+    }
+
+    #botonCodigo{
+        padding: 20px 30px;
+        font-size: 1.2em;
+    }
+}
+
+
+/* Media Queries para Escritorios */
+@media (min-width: 1024px) {
+    #logo {
+        width: 20%;
+    }
+
+    .contenido-inicio {
+        width: 90%;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 3.2em;
+        width: 100%;
+    }
+
+    .contenido-inicio p {
+        font-size: 1.8em;
+    }
+
+    #grafico-inicio {
+        width: 40%;
+        position: relative;
+    }
+
+    #botonCodigo {
+        padding: 40px 60px;
+        font-size: 2.2em;
+    }
 }
