@@ -262,8 +262,6 @@ body{
         font-size: 1.2em;
     }
 
-
-
     .area-preguntas {
         display: none;
     }
@@ -288,6 +286,10 @@ body{
         padding: 5px 5px 5px 20px;
     }
 
+    #boton-menu {
+        display: flex;
+    }
+
     #codibro-logo {
         margin: 10px 10px 10px 40px;
     }
@@ -304,7 +306,7 @@ body{
     }
 
     .area-mensajes {
-        margin: 0% 0% 5% 0%;
+        margin: 0% 0% 16% 0%;
     }
 
     .contenido-mensajes {
