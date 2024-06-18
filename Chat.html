@@ -12,10 +12,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/Home.css">
     <link rel="stylesheet" href="styles/chat.css">
-    <link rel="Icon" href="RSC/Logo-codibro-b.ico">
+    <link rel="Icon" href="RSC/Icon_chatbot.ico">
 </head>
 
 <body>
+
+    <div id="contenido" class="desplegable">
+        <span href="javascript:void(0)" class="closebtn" onclick="cerrarmenu()" id="closeBtn" >&times;</span>
+        <a id="redireccion"  href="PorqueElegirnos.html#contenedor-codigoCIIU"><i class="bi bi-question-circle-fill"></i></a>
+       <div class="contenido-menu">
+        <a href="javascript:void(0)" onclick="sendMessage('¿Qué hago?')">¿Qué hago?</a>
+        <a href="javascript:void(0)" onclick="sendMessage('¿Cómo puedo ayudarte?')">¿Cómo puedo ayudarte?</a>
+        <a href="javascript:void(0)" onclick="sendMessage('¡Hablemos!')">¡Hablemos!</a>
+       </div>
+   </div>
+
+   <div id="overlay-bg" class="overlay-bg"></div>
+
 
     <div class="Contenido">
 
@@ -26,13 +39,17 @@
                 <li id="preguntas" onclick="sendMessage('¡Hablemos!')">¡Hablemos!</li>
             </ul>
         </div>
+        
         <div class="contenido-chat">
             <div class="area-logos">
+                <span id="boton-menu" class="boton-menu" onclick="abrirmenu()">&#9776;</span>
                 <img id="codibro-logo" src="RSC/codi2.svg" alt="Codibro logo">
                 <img class="icons" id="perfil" src="RSC/Recurso 13.svg" alt="perfil-usuario">
-                <a href="PorqueElegirnos.html#CodicoCIIU">
+
+                <a id="ref-masInformacion" href="PorqueElegirnos.html#contenedor-codigoCIIU">
                     <i id="masInformacion" class="bi bi-question-circle-fill"></i>
                 </a>
+
             </div>
             <div class="area-chat" id="area-chat"> 
 
@@ -48,6 +65,7 @@
         </div>
     </div>
         <script src="Scripts/Chatbot.js"></script>
+        <script src="Scripts/MenuDesplegable.js"></script>
 </body>
 
 </html>

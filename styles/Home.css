@@ -176,7 +176,7 @@ footer {
     color: aliceblue;
 }
 
-/* Media Queries para Móviles */
+/* Media query para moviles */
 @media (max-width: 767px) {
 
     .desplegable {
@@ -186,7 +186,7 @@ footer {
         top: 0px; 
         background-color: #1f1f1f;
         display: none;
-        transition: 0.5s;
+        transition: top 0.5s ease-in-out;
         max-height: 0;
         overflow: hidden;
     }
@@ -195,6 +195,7 @@ footer {
         display: block;
         max-height: 40%; /* Ajusta según la cantidad de elementos del menú */
         border-radius: 0px 0px 10px 10px;
+        transition: top 0.5s ease-in-out;
     }
 
     .contenido-menu {
@@ -248,9 +249,17 @@ footer {
         padding: 15px 16px;
         margin-top: 20%;
     }
+
+    #imagen-footer {
+        width: 20%;
+    }
+
+    .copyrigt {
+        font-size: 0.7em;
+    }
 }
 
-/* Media Queries para Tablets */
+/* Media query para tablets */
 @media (min-width: 768px){
 
     #logo {
@@ -288,7 +297,7 @@ footer {
 }
 
 
-/* Media Queries para Escritorios */
+/* Media query para escritorios */
 @media (min-width: 1024px) {
     #logo {
         width: 20%;

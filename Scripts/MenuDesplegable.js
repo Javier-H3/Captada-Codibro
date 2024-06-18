@@ -5,7 +5,7 @@ function abrirmenu() {
     if (Mobile) {
         //Version de mobiles
         desplegable.classList.toggle("abierto");
-        document.getElementById("overlay-bg").style.display = "block"; 
+        document.getElementById("overlay-bg").style.display = "block";
     } else {
         //Version de table y escritorio
         desplegable.style.width = "400px";
@@ -36,3 +36,7 @@ document.addEventListener('click', function(event) {
         cerrarmenu();
     }
 });
+
+function irAPagina(url) {
+    window.location.href = url;
+  }

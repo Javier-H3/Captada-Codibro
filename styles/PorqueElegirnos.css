@@ -54,7 +54,7 @@
     padding-left: 6%
 }
 
-#contenerdor-codigoCIIU,
+#contenedor-codigoCIIU,
 #contenerdor-ParaQueSirve {
     width: 70%;
     padding: 5% 5% 5% 3%;
@@ -63,21 +63,31 @@
 .contenido-codigoCIUU {
     padding: 5% 7% 6% 3%;
     background-color: #E62B3C;
-    border-radius: 60px 60px 60px 60px;
+    border-radius: 60px;
     color: aliceblue;
 }
 
-.contenido-codigoCIUU h1 {
+#titulo-codigoCIUU {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 4%;
 }
 
-.contenido-codigoCIUU p {
+#texto-codigoCIUU {
     font-size: 1.7em;
     font-weight: 400;
     line-height: 1.3em;
     margin-right: 1.5em;
+}
+
+.contenido-titulo {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.contenido-texto {
+    font-size: 1.8em;
+    font-weight: 400;
 }
 
 #contenerdor-ActEco {
@@ -88,22 +98,12 @@
 .contenido-ActEco {
     padding: 4% 3% 5% 8%;
     background-color: #E62B3C;
-    border-radius: 60px 60px 60px 60px;
+    border-radius: 60px;
     color: aliceblue;
 }
 
-.contenido-ActEco h1 {
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 5%;
-}
-
-.contenido-ActEco p {
-    font-size: 1.8em;
-    font-weight: 400;
-    line-height: 1.3em;
-    margin-right: 3em;
-    margin-bottom: 2.5%;
+#grafico-Codibro {
+    display: none;
 }
 
 #Codibro-ActEco {
@@ -115,22 +115,8 @@
 .contenido-ParaQueSirve {
     padding: 3%;
     background-color: #E62B3C;
-    border-radius: 60px 60px 60px 60px;
+    border-radius: 60px;
     color: aliceblue;
-}
-
-.contenido-ParaQueSirve h1 {
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 3%;
-    margin-left: 2%;
-}
-
-.contenido-ParaQueSirve p {
-    font-size: 1.8em;
-    font-weight: 400;
-    line-height: 1.5em;
-    margin-left: 2%;
 }
 
 #Codibro-ParaQueSirve {
@@ -155,27 +141,26 @@
     padding: 5% 2% 5% 5%;
     background-color: #1D1D1B;
     color: white;
-    
     border-radius: 40px 0 0 40px;
 }
 
-.contenido-SobreMi h1 {
-    font-size: 2em;
-    font-weight: 600;
+.contenido-SobreMi h1{
     margin-bottom: 1.5em;
-    
 }
 
-.contenido-SobreMi p {
-    font-size: 1.8em;
-    font-weight: 400;
-    line-height: 1.5em;
+.contenido-SobreMi p{
+    line-height: 1.5em; 
     margin-right: 8em;
 }
+
 #Codibro-SobreMi {
     width: 35%;
     padding-left: 10%;
     padding-right: 5%;
+}
+
+#logo-SobreMi {
+    display: none;
 }
 
 
@@ -184,12 +169,12 @@
     text-align: center;
     margin-left: 57%;
     margin-right: 10%;
+    margin-bottom: 2%;
     border-top: 2px solid #1D1D1B;
-    
 }
 
 .social-icon {
-    margin: 40px;
+    margin: 20px;
     color: #333;
     font-size: 3.4em;
     text-decoration: none;
@@ -208,4 +193,183 @@
     animation: vibration 0.8s ease-in-out infinite;
     color: #E62B3C;
     transition: color 1.3s;
+}
+
+/* Media Query para tablets */
+@media (max-width: 768px) {
+
+    body {
+      font-size: 1em; /* Ajusta el tamaño de fuente para tablets */
+    }
+  
+    .referencias {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: center; /* Centra los elementos horizontalmente */
+    }
+  
+    #contenido-referencias {
+      width: 90%; 
+      padding: 20px; 
+    }
+  
+    .lista-referencias {
+      width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio disponible */
+      border-radius: 40px; /* Bordes redondeados en todos los lados */
+    }
+  
+    #Codibro-referencias,
+    #Codibro-codigo,
+    #Codibro-ActEco,
+    #Codibro-ParaQueSirve {
+      width: 80%; /* Ajusta el ancho de las imágenes */
+      margin-bottom: 20px; /* Agrega espacio entre las imágenes y el contenido */
+    }
+  
+    .contenido-codigoCIUU,
+    .contenido-ActEco,
+    .contenido-ParaQueSirve {
+      padding: 20px; /* Ajusta el padding para que el contenido no quede pegado a los bordes */
+    }
+  
+    .contenido-ActEco p {
+      margin-right: 0; /* Elimina el margen derecho para evitar desbordamientos */
+    }
+  }
+
+/*Media query para moviles*/
+@media (max-width: 767px) {
+
+    #titulo {
+        font-size: 2.5em;
+        padding: 5% 2% 2% 2%;
+    }
+
+    .contenido-titulo{
+        font-size: 1.5em;
+    }
+
+    .contenido-texto {
+        font-size: 1.2em;
+    }
+
+    #contenido-referencias {
+        width: 90%;
+        padding: 3% 4% 3% 0%;
+        align-content: center;
+    }
+
+    .lista-referencias {
+        width: 90%;
+        padding: 5% 5% 5% 9%;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 1.3em;
+        border-radius: 40px 40px 40px 40px;
+        
+    }
+
+    #Codibro-codigo {
+        width: 50%;
+        padding-right: 10%;
+        padding-top: 0%;
+    }
+
+    #contenedor-codigoCIIU {
+        width: 90%;
+    }
+
+    #titulo-codigoCIUU {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    #texto-codigoCIUU {
+        font-size: 1.2em;
+        text-align: center;
+        margin-right: 0%;
+    }
+
+    #contenerdor-ActEco{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .contenido-ActEco {
+        border: 5px solid black;
+        
+    }
+
+
+    #grafico-Codibro {
+        display: block;
+        float: right;
+        position: relative;
+        margin: 5px;
+        bottom: 160px;
+        width: 25%;
+    }
+
+    #Codibro-referencias,
+    #Codibro-ParaQueSirve,
+    #Codibro-ActEco,
+    #Codibro-SobreMi {
+        display: none;
+    }
+
+    .referencias,
+    .codigo-CIIU,
+    .Actividad-economica,
+    .ParaQueSirve,
+    .SobreMi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenerdor-ParaQueSirve {
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    #Txt-paraquesirvo {
+        font-size: 1em;
+    }
+    
+    .contenido-ParaQueSirve {
+        border-radius: 0px 40px 0px 40px;
+        border: 5px solid #1D1D1B;
+    }
+
+    #contenedor-SobreMi {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .contenido-SobreMi {
+        border-radius: 40px;
+        border-radius: 0px 30px 30px 0px;
+        margin-right: 5%;
+    }
+
+    #logo-SobreMi {
+        display: block;
+        width: 20%;
+        margin: 5px;
+        float: inline-start;
+    }
+
+    #Txt-SobreMi {
+        margin-right: 0em;
+        font-size: 1em;
+    }
+
+    .contenidoRedes {
+        margin: 0px 100px 20px 0px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    .social-icon {
+        font-size: 2.2em;
+        margin: 20px;
+    }
 }

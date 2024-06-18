@@ -59,9 +59,6 @@ body{
     display: flex;
     flex-shrink: 0;
     align-items: center; 
-    justify-content: space-between;
-
-    
 }
 
 #codibro-logo {
@@ -77,13 +74,14 @@ body{
     width: 50px; 
     height: 50px; 
     object-fit: cover; 
-    margin-left: 15%;
+    margin: 15% 5% 15% 10%;
 }
 
 #masInformacion {
     font-size: 3em;
     color: #333;
     transition: 1s;
+    margin: 1%;
 }
 
 #masInformacion:hover {
@@ -207,3 +205,128 @@ body{
     width: 30px;
     height: 30px;
 }
+
+#boton-menu{
+    display: none;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+
+    .desplegable {
+        position: absolute;
+        height: 100%;
+        width: 70%;
+        top: 0;
+        left: 0;
+        background-color: #1f1f1f;
+        display: none;
+        transition: right 0.5s ease-in-out;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .desplegable.abierto {
+        display: block;
+        max-height: 100%;
+        border-radius: 0px 0px 10px 10px;
+        transition: 0.5s;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .contenido-menu {
+        position: static;
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
+
+
+    .closebtn {
+        top: 20px;
+        left: 20px;
+        font-size: 50px;
+    }
+
+    #redireccion {
+        position: relative;
+        left: 230px;
+        top: 20px;
+        font-size: 2.5em;
+        padding: 5px;
+        color: #acabab;
+    }
+
+    .contenido-menu a {
+        padding: 10px;
+        margin: 10px ;
+        font-size: 1.2em;
+    }
+
+
+
+    .area-preguntas {
+        display: none;
+    }
+
+    #ref-masInformacion {
+        display: none;
+    }
+
+    .contenido-chat {
+        width: 100%;
+    }
+
+    .area-logos {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .boton-menu {
+        font-size: 2em;
+        padding: 5px 5px 5px 20px;
+    }
+
+    #codibro-logo {
+        margin: 10px 10px 10px 40px;
+    }
+
+    #perfil {
+        width:11.6%;
+        
+        padding: 5px;
+        margin: 0px 0px 0px 35px;
+    }
+
+    .area-chat {
+        margin: 0% 5% 0% 5%;
+    }
+
+    .area-mensajes {
+        margin: 0% 0% 5% 0%;
+    }
+
+    .contenido-mensajes {
+        width: 100%;
+    }
+
+    .user-message, .bot-message {
+        max-width: 60%;
+    }
+    
+    
+    .user-message {
+        font-size: 0.9em;
+    }
+    
+    .bot-message {
+        font-size: 0.9em;
+    }
+
+    .contenedor-logo img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
